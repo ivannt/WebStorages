@@ -1,6 +1,6 @@
-﻿///<reference path="../libs/jquery.js" />
+///<reference path="../libs/jQuery.js" />
 
-define(['lib/jQuery'], function () {
+define(['lib/jQuery'], function (ivan) {
     'use strict';
 
     var ui = (function () {
@@ -16,7 +16,7 @@ define(['lib/jQuery'], function () {
 
             //remove undefined values
             for (var i = 0; i < scores.length; i++) {
-                if (typeof (scores[i]) == 'undefined') {
+                if (typeof (scores[i]) === 'undefined') {
                     scores = scores.slice(0, [i]);
                     break;
                 }
@@ -25,43 +25,43 @@ define(['lib/jQuery'], function () {
             var len = scores.length;
 
             for (var i = 0; i < (len < 10 ? len : 10) ; i++) {
-                var currentLi = $('<li>').attr('id', 'score' + [i]);
-                currentLi.html((i + 1) + '. ' + scores[i].name + ' , moves: ' + scores[i].score);
-                scoreUl.append(currentLi);
+                var currLi = $('<li>').attr('id', 'moves' + [i]);
+                currLi.html((i + 1) + '. ' + scores[i].name + ' , moves: ' + scores[i].score);
+                scoreUl.append(currLi);
             }
         }
 
-        function getPlayerName() {
-            return prompt('Enter your Name: ', 'Anonymous');
+        function getNickname() {
+            return prompt('Enter Your Name: ', 'Anonymous');
         }
 
         function finalMessage(moves) {
-            alert('You won !!! in' + moves + ' moves!');
+            alert('You win whit ' + moves + ' guesses!');
         }
 
         function showCurrentResult(result) {
             var triesUl = $('#numbersUl'),
-                currentLi = $('<li>');
+                $currLi = $('<li>');
 
-            currentLi.html(result.givenNum + ' : ');
+            $currLi.html(result.givenNum + ' : ');
 
             for (var i = 0; i < result.ram; i++) {
-                var ramImg = $('<img>').attr('src', '../styles/images/ram1.gif');
-                currentLi.append(ramImg);
+                var ramImg = $('<img>').attr('src', '../images/ram1.gif');
+                $currLi.append(ramImg);
             }
 
             for (var i = 0; i < result.sheep; i++) {
-                var sheepImg = $('<img>').attr('src', '../styles/images/sheep1.gif');
-                currentLi.append(sheepImg);
+                var sheepImg = $('<img>').attr('src', '../images/sheep1.gif');
+                $currLi.append(sheepImg);
             }
 
-            triesUl.append(currentLi);
+            triesUl.append($currLi);
         }
 
         return {
             getGivenNumber: getGivenNumber,
             fillHighScores: fillHighScores,
-            getPlayerName: getPlayerName,
+            getNickname: getNickname,
             finalMessage: finalMessage,
             showCurrentResult: showCurrentResult
         }

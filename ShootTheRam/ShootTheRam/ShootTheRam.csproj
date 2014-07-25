@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{325247DC-CD28-4744-BA1A-0A062C3F115D}</ProjectGuid>
+    <ProjectGuid>{35D00711-795C-4D9F-B517-A2B42B5E735F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebStorages</RootNamespace>
-    <AssemblyName>WebStorages</AssemblyName>
+    <RootNamespace>ShootTheRam</RootNamespace>
+    <AssemblyName>ShootTheRam</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,6 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\knife.png" />
+    <Content Include="images\ofce.jpg" />
+    <Content Include="images\ram1.gif" />
+    <Content Include="images\reward.png" />
+    <Content Include="images\sheep1.gif" />
+    <Content Include="images\tree_bark.png" />
     <Content Include="index.html" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\game\engine.js" />
@@ -65,18 +71,8 @@
     <Content Include="scripts\game\ui.js" />
     <Content Include="scripts\lib\jQuery.js" />
     <Content Include="scripts\lib\require.js" />
-    <Content Include="styles\images\knife.png" />
-    <Content Include="styles\images\ofce.jpg" />
-    <Content Include="styles\images\ram1.gif" />
-    <Content Include="styles\images\reward.png" />
-    <Content Include="styles\images\sheep1.gif" />
-    <Content Include="styles\images\tree_bark.png" />
-    <Content Include="styles\style.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
-    <Content Include="styles\style.min.css">
-      <DependentUpon>style.less</DependentUpon>
-    </Content>
+    <Content Include="styles\style.css" />
+    <Content Include="styles\style.min.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,7 +102,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:11593/</IISUrl>
+          <IISUrl>http://localhost:14396/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

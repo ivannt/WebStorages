@@ -1,8 +1,10 @@
-﻿define(['game/game', 'game/storage', 'game/ui', 'lib/jQuery'], function (game, storage, ui, Engine) {
+
+define(['game/game', 'game/storage', 'game/ui', 'lib/jQuery'],
+    function (game, storage, ui, Ivan) {
     var engine = (function () {
         function run() {
             var generatedNumber = game.generateNumber(),
-                tries = 0,
+                countMoves = 0,
                 button = $('#check');
 
             button.click(function () {
@@ -14,16 +16,16 @@
                 if ((game.validateNumber(input))) {
                     currRes = game.getCurrentResult(generatedNumber, input);
                     ui.showCurrentResult(currRes);
-                    tries++;
+                    countMoves++;
 
                     //if the number is guessed
                     if (currRes.ram === 4) {
-                        ui.finalMessage(tries);
-                        name = ui.getPlayerName();
-                        storage.addScore(name, tries);
+                        ui.finalMessage(countMoves);
+                        name = ui.getNickname();
+                        storage.addScore(name, countMoves);
                         topScores = storage.getScores();
                         ui.fillHighScores(topScores);
-                        $('#highScores').css('display', 'block');
+                        $('#scoreBoard').css('display', 'block');
                         playAgain();
                     }
 

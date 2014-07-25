@@ -1,8 +1,8 @@
-﻿define([], function () {
+define([], function () {
     'use strict';
 
     var storage = (function () {
-        function addScore(nick, score) {
+        function addScore(name, score) {
             var scoresInStorage = localStorage.getItem('ScoresInStorage');
 
             if (!scoresInStorage) {
@@ -46,7 +46,7 @@
 
     })();
 
-    //localStorage.clear();
+    localStorage.clear();
 
     return storage;
 })

@@ -1,4 +1,4 @@
-﻿define([], function () {
+define([], function () {
     'use strict';
     var game = (function () {
 
@@ -19,7 +19,7 @@
                 possibleDigits.splice(index, 1);
                 roller++;
             }
-            console.log('Generated number is: ' + generatedNumber);
+            console.log('The helpful code is: ' + generatedNumber);
             return generatedNumber;
         }
 
@@ -40,13 +40,13 @@
 
             for (var i = 0; i < 4; i++) {
                 if (digits.indexOf(num[i]) === -1) {
-                    alert('Invalid input');
+                    alert('Must enter digits.');
                     isValid = false;
                     return;
                 }
                 for (var j = i + 1; j < 4; j++) {
                     if (num[i] === num[j]) {
-                        alert('Enter non-repeating digits.');
+                        alert('Must enter non-repeating digits.');
                         isValid = false;
                         return;
                     }
@@ -84,4 +84,4 @@
 
     })();
     return game;
-})
+});

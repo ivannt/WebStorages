@@ -1,0 +1,5 @@
+D:\My Documents\Visual Studio 2013\Projects\JSApps\WebStorages\ShootTheRam\ShootTheRam\bin\ShootTheRam.dll
+D:\My Documents\Visual Studio 2013\Projects\JSApps\WebStorages\ShootTheRam\ShootTheRam\bin\ShootTheRam.pdb
+D:\My Documents\Visual Studio 2013\Projects\JSApps\WebStorages\ShootTheRam\ShootTheRam\obj\Debug\ShootTheRam.csprojResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2013\Projects\JSApps\WebStorages\ShootTheRam\ShootTheRam\obj\Debug\ShootTheRam.dll
+D:\My Documents\Visual Studio 2013\Projects\JSApps\WebStorages\ShootTheRam\ShootTheRam\obj\Debug\ShootTheRam.pdb
