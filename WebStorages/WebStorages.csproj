@@ -67,9 +67,11 @@
     <Content Include="scripts\lib\require.js" />
     <Content Include="styles\images\knife.png" />
     <Content Include="styles\images\ofce.jpg" />
-    <Content Include="styles\images\ram.jpg" />
+    <Content Include="styles\images\ram.png" />
+    <Content Include="styles\images\ram1.gif" />
     <Content Include="styles\images\reward.png" />
-    <Content Include="styles\images\sheep.jpg" />
+    <Content Include="styles\images\sheep.png" />
+    <Content Include="styles\images\sheep1.gif" />
     <Content Include="styles\images\tree_bark.png" />
     <Content Include="styles\style.css">
       <DependentUpon>style.less</DependentUpon>

@@ -1,4 +1,4 @@
-﻿///<reference path="../lib/jQuery.js" />
+﻿
 define(['lib/jQuery'], function () {
     'use strict';
 
@@ -25,12 +25,12 @@ define(['lib/jQuery'], function () {
 
             for (var i = 0; i < (len < 10 ? len : 10) ; i++) {
                 var currentLi = $('<li>').attr('id', 'score' + [i]);
-                currentLi.html((i + 1) + '. ' + scores[i].nick + ' ,score: ' + scores[i].score);
+                currentLi.html((i + 1) + '. ' + scores[i].name + ' ,score: ' + scores[i].score);
                 scoreUl.append(currentLi);
             }
         }
 
-        function getNickname() {
+        function getPlayerName() {
             return prompt('Enter your Name: ', 'Anonymous');
         }
 
@@ -45,12 +45,12 @@ define(['lib/jQuery'], function () {
             currentLi.html(result.givenNum + ' : ');
 
             for (var i = 0; i < result.ram; i++) {
-                var ramImg = $('<img>').attr('src', '../../styles/images/ram.jpg');
+                var ramImg = $('<img>').attr('src', '../../styles/images/ram1.gif');
                 currentLi.append(ramImg);
             }
 
             for (var i = 0; i < result.sheep; i++) {
-                var sheepImg = $('<img>').attr('src', '../../styles/images/sheep.jpg');
+                var sheepImg = $('<img>').attr('src', '../../styles/images/sheep1.gif');
                 currentLi.append(sheepImg);
             }
 
@@ -60,7 +60,7 @@ define(['lib/jQuery'], function () {
         return {
             getGivenNumber: getGivenNumber,
             fillHighScores: fillHighScores,
-            getNickname: getNickname,
+            getPlayerName: getPlayerName,
             finalMessage: finalMessage,
             showCurrentResult: showCurrentResult
         }

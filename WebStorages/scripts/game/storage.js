@@ -13,7 +13,7 @@
             }
 
             scoresInStorage.push({
-                nick: nick,
+                name: name,
                 score: score
             });
 

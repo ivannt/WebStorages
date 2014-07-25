@@ -1,4 +1,4 @@
-﻿define(['game/game', 'game/storage', 'game/ui', 'lib/jQuery'], function (game, storage, ui, Valio) {
+﻿define(['game/game', 'game/storage', 'game/ui', 'lib/jQuery'], function (game, storage, ui, Engine) {
     var engine = (function () {
         function run() {
             var generatedNumber = game.generateNumber(),
@@ -8,7 +8,7 @@
             button.click(function () {
                 var input = ui.getGivenNumber(),
                     currRes,
-                    nick,
+                    name,
                     topScores;
 
                 if ((game.validateNumber(input))) {
@@ -19,7 +19,7 @@
                     //if the number is guessed
                     if (currRes.ram === 4) {
                         ui.finalMessage(tries);
-                        nick = ui.getNickname();
+                        name = ui.getNickname();
                         storage.addScore(nick, tries);
                         topScores = storage.getScores();
                         ui.fillHighScores(topScores);
