@@ -19,8 +19,8 @@
                     //if the number is guessed
                     if (currRes.ram === 4) {
                         ui.finalMessage(tries);
-                        name = ui.getNickname();
-                        storage.addScore(nick, tries);
+                        name = ui.getPlayerName();
+                        storage.addScore(name, tries);
                         topScores = storage.getScores();
                         ui.fillHighScores(topScores);
                         $('#highScores').css('display', 'block');
