@@ -46,12 +46,12 @@ define(['lib/jQuery'], function (ivan) {
             $currLi.html(result.givenNum + ' : ');
 
             for (var i = 0; i < result.ram; i++) {
-                var ramImg = $('<img>').attr('src', '../images/ram1.gif');
+                var ramImg = $('<img>').attr('src', 'images/ram1.gif');
                 $currLi.append(ramImg);
             }
 
             for (var i = 0; i < result.sheep; i++) {
-                var sheepImg = $('<img>').attr('src', '../images/sheep1.gif');
+                var sheepImg = $('<img>').attr('src', 'images/sheep1.gif');
                 $currLi.append(sheepImg);
             }
 
