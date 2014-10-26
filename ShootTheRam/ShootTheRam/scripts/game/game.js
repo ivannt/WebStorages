@@ -30,8 +30,8 @@ define([], function () {
 
 
             if (num.length !== 4) {
-                alert('The helpful code is: ' + generatedNumber);
-               // alert('Enter a 4 digit number.');
+                
+                alert('Enter a 4 digit number.');
                 isValid = false;
             }
             if (num[0] === '0') {
