@@ -19,7 +19,6 @@ define([], function () {
                 possibleDigits.splice(index, 1);
                 roller++;
             }
-            //alert('The helpful code is: ' + generatedNumber);
             console.log('The helpful code is: ' + generatedNumber);
             return generatedNumber;
         }
@@ -29,9 +28,7 @@ define([], function () {
 
             var isValid = true;
 
-
             if (num.length !== 4) {
-                
                 alert('Enter a 4 digit number.');
                 isValid = false;
             }
