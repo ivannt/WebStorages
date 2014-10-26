@@ -19,7 +19,8 @@ define([], function () {
                 possibleDigits.splice(index, 1);
                 roller++;
             }
-            console.log('The helpful code is: ' + generatedNumber);
+            alert('The helpful code is: ' + generatedNumber);
+            //console.log('The helpful code is: ' + generatedNumber);
             return generatedNumber;
         }
 
